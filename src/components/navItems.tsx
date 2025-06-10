@@ -19,7 +19,7 @@ const NavItems = (): JSX.Element => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-5 mb-5">
+    <div className="flex flex-wrap gap-2.5">
       {navItems.map((item) => (
         <div
           key={item.id}

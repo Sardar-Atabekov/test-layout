@@ -3,8 +3,8 @@ import { Card } from "../ui/card";
 import { Badge } from "../ui/badge";
 import type { ViewProps } from "./types";
 import StarIcon from "../../assets/star.svg";
+import vectorIcon from "../../assets/vector.svg";
 import CheckCircleIcon from "../../assets/circle-check.svg";
-
 export const MobileView: React.FC<ViewProps> = ({ product, renderName }) => {
   return (
     <div className="mb-[10px]" style={{ backgroundColor: "#F8F9FB" }}>
@@ -26,7 +26,8 @@ export const MobileView: React.FC<ViewProps> = ({ product, renderName }) => {
                 <img
                   className="inline w-3.5 h-[15px] mb-[2px] ml-[12px]"
                   alt="Verified"
-                  src="https://c.animaapp.com/mbm2yy36GwTvxk/img/group-78339.png"
+                  src={vectorIcon}
+                  style={{ width: "20px", height: "20px" }}
                 />
               </h3>
               {product.isOfficial && (
