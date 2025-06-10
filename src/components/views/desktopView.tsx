@@ -1,18 +1,27 @@
 import React from "react";
 import { Badge } from "../ui/badge";
-import CheckCircleIcon from "../../assets/circle-check.svg";
-import StarIcon from "../../assets/star.svg";
 import type { ViewProps } from "./types";
+import StarIcon from "../../assets/star.svg";
+import CheckCircleIcon from "../../assets/circle-check.svg";
 
 export const DesktopView: React.FC<ViewProps> = ({
   product,
   renderName,
-  content,
 }) => {
   return (
-    <div className="mb-[10px] flex flex-col border border-gray-200 bg-white p-4 px-5 shadow rounded-xl">
+    <div className="mb-[10px] flex flex-col border border-gray-200 bg-white p-4 px-5 shadow rounded-xl"
+        style={{ backgroundColor: "#F8F9FB" }}
+    >
       <div className="flex mb-5">
-        {content}
+        <div className="flex items-start mr-4">
+          <div className="relative flex items-center justify-center rounded-[5px] bg-white" style={{ width: "90px", height: "95px" }}>
+            <img
+              src={product.iconSrc}
+              alt="Icon"
+              style={{ width: "90px", height: "90px" }}
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-2 w-full">
           <div className="flex justify-between">
             <h3 className="font-semibold text-xl text-[#333333] leading-[30px]">
@@ -35,7 +44,7 @@ export const DesktopView: React.FC<ViewProps> = ({
             </span>
           </div>
 
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 text-sm mt-1">
             <div className="bg-[#e1eaf6] rounded-xl h-6 px-2.5 flex items-center">
               <span className="font-semibold text-sm text-[#333333]">
                 {product.rating}

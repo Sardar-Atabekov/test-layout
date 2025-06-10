@@ -1,6 +1,6 @@
-import JSIcon from "./../assets/js.png";
-import Logo from "./../assets/logo.png";
-import lockIcon from "./../assets/lock.png";
+import JSIcon from "./../assets/js.svg";
+import Logo from "./../assets/logo.svg";
+import lockIcon from "./../assets/lock.svg";
 import { SoftwareCard } from "./softwareCard";
 
 const softwareProducts = [
@@ -20,7 +20,7 @@ const softwareProducts = [
     id: 2,
     name: "Puppeteer plugin to solve reCAPTCHAs automatically",
     subTitle: "This software is designed to work with any site",
-    isOfficial: true,
+    isOfficial: false,
     rating: 4.6,
     reviews: 456,
     price: "$67",

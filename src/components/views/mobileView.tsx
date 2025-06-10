@@ -5,17 +5,21 @@ import type { ViewProps } from "./types";
 import StarIcon from "../../assets/star.svg";
 import CheckCircleIcon from "../../assets/circle-check.svg";
 
-export const MobileView: React.FC<ViewProps> = ({
-  product,
-  renderName,
-  content,
-}) => {
+export const MobileView: React.FC<ViewProps> = ({ product, renderName }) => {
   return (
-    <div className="mb-[10px]">
+    <div className="mb-[10px]" style={{ backgroundColor: "#F8F9FB" }}>
       <Card className="bg-[rgb(248,249,251)] border-[#e1eaf6] rounded-[10px]">
         <div className="p-3 xs:p-[20px] flex flex-col">
-          <div className="flex items-center">
-            {content}
+          <div className="flex">
+            <div className="flex items-start pr-4">
+              <div className="relative flex items-center justify-center rounded-[5px] bg-white">
+                <img
+                  src={product.iconSrc}
+                  alt="Icon"
+                  style={{ width: "60px", height: "60px" }}
+                />
+              </div>
+            </div>
             <div className="flex-1">
               <h3 className="font-semibold text-xl text-[#333333] leading-[30px]">
                 <span>{renderName}</span>

@@ -1,4 +1,4 @@
-import JSIcon from "./../assets/js.png";
+import JSIcon from "./../assets/js.svg";
 import lockSmallIcon from "./../assets/lock.svg";
 const NavItems = (): JSX.Element => {
   const navItems = [

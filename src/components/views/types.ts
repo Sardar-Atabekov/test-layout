@@ -18,7 +18,6 @@ export interface SoftwareProduct {
 export interface ViewProps {
   product: SoftwareProduct;
   renderName: string;
-  content: React.ReactNode;
 }
 
 export interface SoftwareCardProps {
