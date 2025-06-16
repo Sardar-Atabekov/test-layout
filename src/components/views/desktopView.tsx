@@ -6,20 +6,7 @@ import vectorIcon from "../../assets/vector.svg";
 import CheckCircleIcon from "../../assets/circle-check.svg";
 
 export const DesktopView: React.FC<ViewProps> = ({ product, renderName }) => {
-  function isString(value: unknown): value is string {
-    return typeof value === "string" && value.length > 0;
-  }
-
-  const data: unknown = "";
-  if (isString(data)) {
-    console.log(data.toUpperCase()); // TypeScript ошибка?
-  }
-
-  console.log(1);
-  Promise.resolve().then(() => console.log(2));
-  setTimeout(() => console.log(3), 0);
-  queueMicrotask(() => console.log(4));
-  console.log(5);
+  
   return (
     <div
       className="mb-[10px] flex flex-col border border-gray-200 bg-white p-4 px-5 rounded-xl"
